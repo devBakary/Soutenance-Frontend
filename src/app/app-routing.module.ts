@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'authentification',
+    loadChildren: () => import('./authentification/authentification.module').then( m => m.AuthentificationPageModule)
+  },
+  {
+    path: 'ajouter-salarie',
+    loadChildren: () => import('./ajouter-salarie/ajouter-salarie.module').then( m => m.AjouterSalariePageModule)
+  },
 ];
 
 @NgModule({
